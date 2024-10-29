@@ -1,0 +1,15 @@
+*design* DebussyLib (btIdent Verdi_V-2023.12-SP2)
+Command arguments:
+    +define+verilog
+    -sverilog
+    -f ../00_src/flist.f
+        ../00_src/register.sv
+        ../00_src/mux_2to1.sv
+        ../00_src/input_buffer.sv
+        ../01_tb/testbench.sv
+    design_test.fsdb
+
+Highest level modules:
+design_test
+
+Total	0 error(s),   0 warning(s)
