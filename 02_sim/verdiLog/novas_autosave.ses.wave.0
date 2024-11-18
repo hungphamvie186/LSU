@@ -1,0 +1,68 @@
+Magic 271485
+Revision Verdi_V-2023.12-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1920 406 230 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/earth/mars/mars04/workspace/School_Pj/milestone2/LSU/02_sim/design_test.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 131.300000
+cursor 25.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 14
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/earth/mars/mars04/workspace/School_Pj/milestone2/LSU/02_sim/design_test.fsdb"
+addSignal -h 15 /design_test/dut/ip/i_clk
+addSignal -h 15 -holdScope i_rst
+addSignal -h 15 -UNSIGNED -HEX -holdScope i_io_sw[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope swiches_buf_out[31:0]
+addSignal -h 15 -UNSIGNED -HEX /design_test/dut/mux_out_data/sel[1:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope o_ld_data[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope addr[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope sel[1:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope o_ld_data[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope ip[31:0]
+addSignal -h 15 -UNSIGNED -HEX /design_test/dut/input_buffer_out[31:0]
+addSignal -h 15 /design_test/dut/ip/addr
+addSignal -h 15 -UNSIGNED -HEX -holdScope bottons_buf_out[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope swiches_buf_out[31:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+
